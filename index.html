@@ -5,8 +5,56 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Car Sales USA</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Минимальные стили для фона */
+        .hero-section {
+            background-image: url('https://raw.githubusercontent.com/WarriorCreatir/SaleCar/main/hero-bg.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+            text-align: center;
+        }
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background: #ff6b6b;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        .cars-section {
+            padding: 20px;
+        }
+        .car-catalog {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+        }
+        .car-card {
+            border: 1px solid #ddd;
+            padding: 10px;
+            width: 300px;
+            text-align: center;
+        }
+        .car-card img {
+            max-width: 100%;
+            height: auto;
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background: #333;
+            color: #fff;
+        }
+    </style>
 </head>
 <body>
+    <!-- Главная секция с фоновым изображением -->
     <header class="hero-section">
         <div class="hero-content">
             <h1>Find Your Dream Car</h1>
@@ -15,6 +63,7 @@
         </div>
     </header>
 
+    <!-- Секция с автомобилями -->
     <section id="cars" class="cars-section">
         <h2>Featured Cars</h2>
         <div class="car-catalog">
@@ -39,12 +88,14 @@
         </div>
     </section>
 
+    <!-- Секция с отзывами -->
     <section id="reviews" class="reviews-section">
         <h2>What Our Customers Say</h2>
         <p>"Great cars and fantastic service!" - John D.</p>
         <p>"I found my dream car here. Excellent experience!" - Sarah W.</p>
     </section>
 
+    <!-- Секция контактов -->
     <section id="contact" class="contact-section">
         <h2>Contact Us</h2>
         <form id="contact-form">
@@ -55,10 +106,9 @@
         </form>
     </section>
 
+    <!-- Футер -->
     <footer>
         <p>&copy; 2024 Car Sales USA. All Rights Reserved.</p>
     </footer>
-
-    <script src="script.js"></script>
 </body>
 </html>
